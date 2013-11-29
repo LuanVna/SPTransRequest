@@ -26,23 +26,25 @@ Parametros informados ao metodo:
 requestMethodGET - Um enum com os metodos disponiveis no servidor da SPTrans.
 
 Segue a lista de Enum:
-     requestMethodGETLinhas
-     requestMethodGETDetalhes 
-     requestMethodGETParadas 
-     requestMethodGETParadasPorLinha,
-     requestMethodGETParadasPorCorredor 
-     requestMethodGETCorredores 
-     requestMethodGETPosicaoDoVeiculo 
-     requestMethodGETLinha 
-     requestMethodGETParada
+*      requestMethodGETLinhas
+*      requestMethodGETDetalhes 
+*      requestMethodGETParadas  ````
+*      requestMethodGETParadasPorLinha,
+*      requestMethodGETParadasPorCorredor 
+*      requestMethodGETCorredores 
+*      requestMethodGETPosicaoDoVeiculo 
+*      requestMethodGETLinha 
+*      requestMethodGETParada
 
 Veja a documentação da SPTrans, cada enum representa o nome dos metodos.
 [Documentação SPTrans](http://www.sptrans.com.br/desenvolvedores/APIOlhoVivo/Documentacao.aspx?1#docApi-linhas)
 
 Usando o metodo para buscar as paradas:
 
- [SPTransRequest requestServerSPTrans:requestMethodGETLinha line:linha response:^(NSMutableDictionary *response) {
+[SPTransRequest requestServerSPTrans:requestMethodGETLinha line:linha response:^(NSMutableDictionary *response) {
         NSLog(@"Informações encontradas %@", response);
     } erro:^(NSError *error) {
         NSLog(@"Erro %@", [error description]);
-    }]; 
+    }];
+
+Esse projeto foi criado para facilitar a vida de pessoas que utilizam o transporte publico da cidade de são paulo.
