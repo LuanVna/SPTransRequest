@@ -2,8 +2,8 @@ SPTransRequest
 ==============
 
 Classes em IOS para conexão com os servidores da SPTrans
-
-Bem vindo ao SPTransRequest, abaixo temos uma breve explicação de como é o funcionamento deste pequeno frameworking.
+Bem vindo, esse projeto foi criado para facilitar a vida de pessoas que utilizam o transporte publico da cidade de são paulo.
+Abaixo temos uma breve explicação de como é o funcionamento deste pequeno frameworking.
 
 Para iniciar você precisa de um token da SPTrans, disponível em
 [SPTrans Desenvolvedores](http://www.sptrans.com.br/desenvolvedores/)
@@ -28,8 +28,8 @@ requestMethodGET - Um enum com os metodos disponiveis no servidor da SPTrans.
 Segue a lista de Enum:
 *      requestMethodGETLinhas
 *      requestMethodGETDetalhes 
-*      requestMethodGETParadas  ````
-*      requestMethodGETParadasPorLinha,
+*      requestMethodGETParadas 
+*      requestMethodGETParadasPorLinha
 *      requestMethodGETParadasPorCorredor 
 *      requestMethodGETCorredores 
 *      requestMethodGETPosicaoDoVeiculo 
@@ -46,5 +46,3 @@ Usando o metodo para buscar as paradas:
     } erro:^(NSError *error) {
         NSLog(@"Erro %@", [error description]);
     }];
-
-Esse projeto foi criado para facilitar a vida de pessoas que utilizam o transporte publico da cidade de são paulo.
