@@ -1,9 +1,7 @@
 SPTransRequest
 ==============
 
-Classes em IOS para conexão com os servidores da SPTrans
-Bem vindo, esse projeto foi criado para facilitar a vida de pessoas que utilizam o transporte publico da cidade de são paulo.
-Abaixo temos uma breve explicação de como é o funcionamento deste pequeno frameworking.
+Classes em Objective-C para conexão com os servidores da SPTrans abaixo temos uma breve explicação de como é o funcionamento deste pequeno framework.
 
 Para iniciar você precisa de um token da SPTrans, disponível em
 [SPTrans Desenvolvedores](http://www.sptrans.com.br/desenvolvedores/)
@@ -24,7 +22,12 @@ requestServerSPTrans: line: response: erro:
 Parametros informados ao metodo:
 
 requestMethodGET - Um enum com os metodos disponiveis no servidor da SPTrans.
-
+line - Numero ou nome ( sem espaço ) da linha
+blocks -
+	   response - se tudo der certo é entregue as informações a varaivel response do tipo 'NSMutableDictionary'.
+	   erro - se alguma coisa der errado o block erro entrega a descrição do erro.
+	   
+	   
 Segue a lista de Enum:
 *      requestMethodGETLinhas
 *      requestMethodGETDetalhes 
